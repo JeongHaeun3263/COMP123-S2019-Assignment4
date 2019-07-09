@@ -1,6 +1,6 @@
 ﻿namespace COMP123_S2019_Assignment4
 {
-    partial class Form1
+    partial class BMICalculatorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // BMICalculatorForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(717, 953);
+            this.Font = new System.Drawing.Font("Gulim", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.MinimizeBox = false;
+            this.Name = "BMICalculatorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BMI Calculator Form";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
