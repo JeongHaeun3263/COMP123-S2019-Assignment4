@@ -6,17 +6,25 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Assignment4
 {
-    static class Program
+    public static class Program
     {
+        public static StartForm startForm;
+        public static BMICalculatorForm bmiCalculatorForm; 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BMICalculatorForm());
+
+            startForm = new StartForm();
+            bmiCalculatorForm = new BMICalculatorForm();
+
+            Application.Run(startForm);
         }
     }
 }

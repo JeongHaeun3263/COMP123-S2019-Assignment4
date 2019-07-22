@@ -16,5 +16,22 @@ namespace COMP123_S2019_Assignment4
         {
             InitializeComponent();
         }
+
+        private void ImperialradioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            HeightTextBox.Text = "inches";
+            WeightTextBox.Text = "pounds";
+        }
+
+        private void MetricRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            HeightTextBox.Text = "metres";
+            WeightTextBox.Text = "kilograms";
+        }
+
+        private void CalBMIButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
