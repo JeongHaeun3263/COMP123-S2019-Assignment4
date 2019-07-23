@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Splashtimer = new System.Windows.Forms.Timer(this.components);
+            this.WelcomeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Splashtimer
@@ -37,12 +38,22 @@
             this.Splashtimer.Interval = 3000;
             this.Splashtimer.Tick += new System.EventHandler(this.Splashtimer_Tick);
             // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.Location = new System.Drawing.Point(21, 156);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(257, 81);
+            this.WelcomeLabel.TabIndex = 0;
+            this.WelcomeLabel.Text = "Welcome to BMI Calculator";
+            this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 433);
             this.ControlBox = false;
+            this.Controls.Add(this.WelcomeLabel);
             this.Font = new System.Drawing.Font("Gulim", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(7);
@@ -59,5 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Timer Splashtimer;
+        private System.Windows.Forms.Label WelcomeLabel;
     }
 }
