@@ -21,10 +21,10 @@ using System.Windows.Forms;
  */
 namespace COMP123_S2019_Assignment4
 {
-    public partial class BMICalculatorForm : Form
+    public partial class BMICalculator : Form
     {
         
-        public BMICalculatorForm()
+        public BMICalculator()
         {
             InitializeComponent();
         }

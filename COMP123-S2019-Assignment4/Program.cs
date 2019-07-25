@@ -9,7 +9,7 @@ namespace COMP123_S2019_Assignment4
     public static class Program
     {
         public static StartForm startForm;
-        public static BMICalculatorForm bmiCalculatorForm; 
+        public static BMICalculator bmiCalculatorForm; 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -22,7 +22,7 @@ namespace COMP123_S2019_Assignment4
             Application.SetCompatibleTextRenderingDefault(false);
 
             startForm = new StartForm();
-            bmiCalculatorForm = new BMICalculatorForm();
+            bmiCalculatorForm = new BMICalculator();
 
             Application.Run(startForm);
         }
