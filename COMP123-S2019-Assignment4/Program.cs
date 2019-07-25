@@ -18,7 +18,7 @@ namespace COMP123_S2019_Assignment4
         {
 
 
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             startForm = new StartForm();
