@@ -35,9 +35,6 @@
             this.WeightLabel = new System.Windows.Forms.Label();
             this.CalBMIButton = new System.Windows.Forms.Button();
             this.BMIResulttextBox = new System.Windows.Forms.TextBox();
-            this.BMIScaleResulttextBox = new System.Windows.Forms.TextBox();
-            this.BMIlabel = new System.Windows.Forms.Label();
-            this.BMIScaleLabel = new System.Windows.Forms.Label();
             this.WeightTextBox = new System.Windows.Forms.TextBox();
             this.HeightTextBox = new System.Windows.Forms.TextBox();
             this.ResetButton = new System.Windows.Forms.Button();
@@ -57,14 +54,11 @@
             this.BMICalculateTableLayoutPanel.Controls.Add(this.HeightLabel, 0, 1);
             this.BMICalculateTableLayoutPanel.Controls.Add(this.WeightLabel, 0, 2);
             this.BMICalculateTableLayoutPanel.Controls.Add(this.CalBMIButton, 0, 3);
-            this.BMICalculateTableLayoutPanel.Controls.Add(this.BMIResulttextBox, 2, 4);
-            this.BMICalculateTableLayoutPanel.Controls.Add(this.BMIScaleResulttextBox, 2, 5);
-            this.BMICalculateTableLayoutPanel.Controls.Add(this.BMIlabel, 0, 4);
-            this.BMICalculateTableLayoutPanel.Controls.Add(this.BMIScaleLabel, 0, 5);
             this.BMICalculateTableLayoutPanel.Controls.Add(this.WeightTextBox, 2, 2);
             this.BMICalculateTableLayoutPanel.Controls.Add(this.HeightTextBox, 2, 1);
             this.BMICalculateTableLayoutPanel.Controls.Add(this.ResetButton, 0, 7);
             this.BMICalculateTableLayoutPanel.Controls.Add(this.BMIProgressBar, 0, 6);
+            this.BMICalculateTableLayoutPanel.Controls.Add(this.BMIResulttextBox, 0, 4);
             this.BMICalculateTableLayoutPanel.Location = new System.Drawing.Point(1, 1);
             this.BMICalculateTableLayoutPanel.Name = "BMICalculateTableLayoutPanel";
             this.BMICalculateTableLayoutPanel.RowCount = 8;
@@ -167,59 +161,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BMIResulttextBox.BackColor = System.Drawing.Color.White;
             this.BMIResulttextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BMICalculateTableLayoutPanel.SetColumnSpan(this.BMIResulttextBox, 2);
-            this.BMIResulttextBox.Location = new System.Drawing.Point(153, 222);
+            this.BMICalculateTableLayoutPanel.SetColumnSpan(this.BMIResulttextBox, 4);
+            this.BMIResulttextBox.Location = new System.Drawing.Point(3, 222);
             this.BMIResulttextBox.Multiline = true;
             this.BMIResulttextBox.Name = "BMIResulttextBox";
-            this.BMIResulttextBox.Size = new System.Drawing.Size(144, 47);
+            this.BMICalculateTableLayoutPanel.SetRowSpan(this.BMIResulttextBox, 2);
+            this.BMIResulttextBox.Size = new System.Drawing.Size(294, 100);
             this.BMIResulttextBox.TabIndex = 1;
             this.BMIResulttextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BMIResulttextBox.TextChanged += new System.EventHandler(this.BMIResulttextBox_TextChanged);
-            // 
-            // BMIScaleResulttextBox
-            // 
-            this.BMIScaleResulttextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BMIScaleResulttextBox.BackColor = System.Drawing.Color.White;
-            this.BMIScaleResulttextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BMICalculateTableLayoutPanel.SetColumnSpan(this.BMIScaleResulttextBox, 2);
-            this.BMIScaleResulttextBox.Font = new System.Drawing.Font("Gulim", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BMIScaleResulttextBox.Location = new System.Drawing.Point(153, 275);
-            this.BMIScaleResulttextBox.Multiline = true;
-            this.BMIScaleResulttextBox.Name = "BMIScaleResulttextBox";
-            this.BMIScaleResulttextBox.Size = new System.Drawing.Size(144, 47);
-            this.BMIScaleResulttextBox.TabIndex = 1;
-            this.BMIScaleResulttextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BMIScaleResulttextBox.TextChanged += new System.EventHandler(this.BMIResulttextBox_TextChanged);
-            // 
-            // BMIlabel
-            // 
-            this.BMIlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BMIlabel.AutoSize = true;
-            this.BMICalculateTableLayoutPanel.SetColumnSpan(this.BMIlabel, 2);
-            this.BMIlabel.Location = new System.Drawing.Point(3, 219);
-            this.BMIlabel.Name = "BMIlabel";
-            this.BMIlabel.Size = new System.Drawing.Size(144, 53);
-            this.BMIlabel.TabIndex = 9;
-            this.BMIlabel.Text = "BMI";
-            this.BMIlabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // BMIScaleLabel
-            // 
-            this.BMIScaleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BMIScaleLabel.AutoSize = true;
-            this.BMICalculateTableLayoutPanel.SetColumnSpan(this.BMIScaleLabel, 2);
-            this.BMIScaleLabel.Location = new System.Drawing.Point(3, 272);
-            this.BMIScaleLabel.Name = "BMIScaleLabel";
-            this.BMIScaleLabel.Size = new System.Drawing.Size(144, 53);
-            this.BMIScaleLabel.TabIndex = 10;
-            this.BMIScaleLabel.Text = "Scale";
-            this.BMIScaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // WeightTextBox
             // 
@@ -314,10 +264,7 @@
         private System.Windows.Forms.TextBox WeightTextBox;
         private System.Windows.Forms.Button CalBMIButton;
         private System.Windows.Forms.TextBox BMIResulttextBox;
-        private System.Windows.Forms.TextBox BMIScaleResulttextBox;
         private System.Windows.Forms.Button ResetButton;
-        private System.Windows.Forms.Label BMIlabel;
-        private System.Windows.Forms.Label BMIScaleLabel;
         private System.Windows.Forms.ProgressBar BMIProgressBar;
     }
 }
